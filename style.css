@@ -1,0 +1,84 @@
+/* General - Start */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --blue: #0042EB;
+    --green: #3AB19B;
+    --purple: #960796;
+    --font-family: 'Montserrat', sans-serif;
+    --text-color: #161616;
+    --white: #fff;
+}
+
+body{
+    font-family: var(--font-family);
+    color: var(--text-color);
+}
+
+.container{
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 0 15px;
+}
+
+span{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+/* General - End */
+
+/* Console - Start */
+
+
+
+.console__wrap p{
+    border-left: 2px solid var(--blue);
+    padding: 5px 21px;
+}
+
+
+.console__wrap p span{
+    color: var(--blue);
+}
+
+/* Console - End */
+
+/* Git - Start */
+
+.git__wrap ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.git__wrap li{
+    padding: 5px 21px;
+    margin: 16px 0;
+    position: relative;
+}
+
+.git__wrap ul li::before{
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 100%;
+    background-color: var(--purple);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.git__wrap li span:first-of-type{
+    color: var(--purple);
+}
+
+.git__wrap li span:nth-child(2){
+    color: var(--green);
+}
+
+/* Git - End */
